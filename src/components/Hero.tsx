@@ -1,4 +1,4 @@
-import { ArrowDown, Mail, Github, Linkedin, Twitter, Facebook } from 'lucide-react'
+import { Mail, Github, Linkedin, Twitter, Facebook } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 
 interface HeroProps {
