@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --portfolio-bg: #F5F5F5;
+  --portfolio-surface: #FFFFFF;
+  --portfolio-surface-alt: #F0F0F0;
+  --portfolio-text: #111111;
+  --portfolio-text-secondary: #555555;
+  --portfolio-text-muted: #888888;
+  --portfolio-border: #E0E0E0;
+  --portfolio-nav-bg: rgba(255, 255, 255, 0.8);
+  --portfolio-accent-fg: #FFFFFF;
+  --portfolio-card-bg: #FFFFFF;
+  --portfolio-tag-bg: #F0F0F0;
+  --portfolio-code-bg: #F5F5F5;
+}
+
+.dark {
+  --portfolio-bg: #0A0F1C;
+  --portfolio-surface: #1E293B;
+  --portfolio-surface-alt: #0F172A;
+  --portfolio-text: #FFFFFF;
+  --portfolio-text-secondary: #94A3B8;
+  --portfolio-text-muted: #64748B;
+  --portfolio-border: #2E3A4D;
+  --portfolio-nav-bg: rgba(10, 15, 28, 0.8);
+  --portfolio-accent-fg: #0A0F1C;
+  --portfolio-card-bg: #1E293B;
+  --portfolio-tag-bg: #0F172A;
+  --portfolio-code-bg: #1E293B;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll reveal animations */
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal-fade-up.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+.reveal-fade-in.revealed {
+  opacity: 1;
+}
+
+body {
+  margin: 0;
+  font-family: 'Geist', sans-serif;
+  background-color: var(--portfolio-bg);
+  color: var(--portfolio-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
