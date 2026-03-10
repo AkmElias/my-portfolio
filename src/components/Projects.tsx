@@ -2,9 +2,9 @@ import { ArrowUpRight } from 'lucide-react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const projects = [
-  { num: '01', name: 'Project Name' },
-  { num: '02', name: 'Project Name' },
-  { num: '03', name: 'Project Name' },
+  { num: '01', name: 'Fluent Cart', 'link': 'https://fluentcart.com' },
+  { num: '02', name: 'Paymattic' , 'link': 'https://paymattic.com' },
+  // { num: '03', name: 'Paymattic' , 'link': 'https://paymattic.com' },
 ]
 
 export default function Projects() {
@@ -17,7 +17,7 @@ export default function Projects() {
           04 — PROJECTS
         </span>
         <h2 className="font-sans text-[28px] lg:text-[42px] font-bold italic text-portfolio-text">
-          Things I've built.
+          Things I've contributed to built.
         </h2>
       </div>
 
@@ -26,7 +26,8 @@ export default function Projects() {
         {projects.map((project) => (
           <div key={project.num}>
             <a
-              href="#"
+              target="_blank"
+              href={project.link}
               className="group flex items-center justify-between py-5 lg:py-7 hover:pl-2 transition-all"
             >
               <div className="flex items-center gap-3 lg:gap-5">

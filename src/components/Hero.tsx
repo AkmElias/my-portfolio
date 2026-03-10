@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, Twitter, Facebook } from 'lucide-react'
+import { Mail, Github, Linkedin, Twitter, Facebook, ArrowDown } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 
 interface HeroProps {
@@ -53,13 +53,13 @@ export default function Hero({ isDark }: HeroProps) {
               Get In Touch
               <Mail size={18} />
             </a>
-            {/* <a
+            <a
               href="#projects"
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-portfolio-border font-mono text-sm font-semibold text-portfolio-text hover:border-portfolio-accent transition-colors"
             >
               View Projects
               <ArrowDown size={18} />
-            </a> */}
+            </a>
           </div>
 
           <div className="flex gap-4 mt-2">
