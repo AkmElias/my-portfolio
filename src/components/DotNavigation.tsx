@@ -1,4 +1,4 @@
-const sections = ['hero', 'about', 'experience', 'projects', 'skills', 'contact']
+const sections = ['hero', 'about', 'experience', 'skills', 'projects', 'services', 'contact']
 
 interface DotNavigationProps {
   activeSection: string

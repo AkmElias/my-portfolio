@@ -21,7 +21,7 @@ export default function Contact() {
     <section ref={sectionRef} id="contact" className="reveal-fade-up px-5 lg:px-20 py-[60px] lg:py-[100px] flex flex-col items-center gap-6 lg:gap-12">
       <div className="flex flex-col items-center gap-2 lg:gap-3">
         <span className="font-mono text-[11px] lg:text-xs font-semibold text-portfolio-accent tracking-[2px]">
-          05 — CONTACT
+          06 — CONTACT
         </span>
         <h2 className="font-sans text-[28px] lg:text-[42px] font-bold italic text-portfolio-text text-center">
           Let's work together.

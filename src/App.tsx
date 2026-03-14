@@ -5,6 +5,7 @@ import About from './components/About'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import Services from './components/Services'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import DotNavigation from './components/DotNavigation'
@@ -18,7 +19,7 @@ export default function App() {
   }, [isDark])
 
   useEffect(() => {
-    const sections = ['hero', 'about', 'experience', 'skills', 'contact']
+    const sections = ['hero', 'about', 'experience', 'skills', 'services', 'contact']
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -47,6 +48,7 @@ export default function App() {
         <Experience />
         <Skills />
         <Projects />
+        <Services />
         <Contact />
       </main>
       <Footer />
