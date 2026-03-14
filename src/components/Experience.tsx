@@ -12,17 +12,17 @@ function RevealCard({ children, delay, className }: { children: React.ReactNode;
 const experiences = [
   {
     date: 'Sep 2024 — Present',
-    company: 'AuthLab, Sylhet',
+    company: 'Fluent-cart (AuthLab), Sylhet',
     role: 'Senior Software Engineer',
     bullets: [
-      "Lead development of features across the company's market-leading SaaS products.",
-      'Architect and implement integrations with CRM platforms and payment gateways.',
-      'Drive UI/UX improvements and redesigns that enhance user experience.',
-      'Mentor junior engineers and conduct code reviews.',
+      'Lead development of Fluent-cart — a high-performance e-commerce plugin for WordPress.',
+      'Architect payment gateway integrations, subscriptions module, and co-implement tax module and other core modules.',
+      'Build custom WordPress plugins with clean architecture, REST APIs, and Gutenberg blocks.',
+      'Drive UI/UX improvements and mentor junior engineers through code reviews.',
     ],
     mobileBullets: [
-      'Lead development of market-leading SaaS products.',
-      'Architect CRM & payment integrations.',
+      'Lead development of Fluent-cart e-commerce plugin.',
+      'Architect payment integrations & checkout systems.',
     ],
     tech: ['WordPress', 'Plugins', 'Vue.js', 'PHP', 'MySQL', 'REST APIs'],
     mobileTech: ['Vue.js', 'PHP', 'MySQL'],

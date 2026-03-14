@@ -6,28 +6,32 @@ import BookCallModal from './BookCallModal'
 
 const services = [
   {
-    icon: Monitor,
-    title: 'Web Applications',
-    description:
-      'Full-stack web apps built with React, Vue, Node.js, and modern frameworks. From SaaS platforms to dashboards — scalable, tested, and deployed.',
-  },
-  {
-    icon: Smartphone,
-    title: 'Mobile Applications',
-    description:
-      'Cross-platform mobile apps with React Native or Flutter. Native feel, smooth performance, and real device testing before every release.',
-  },
-  {
     icon: Puzzle,
     title: 'WordPress Plugins',
     description:
-      'Custom WordPress plugins and themes engineered with clean architecture, proper hooks, security best practices, and thorough testing.',
+      'Deep expertise in the WordPress ecosystem — custom plugins, Gutenberg blocks, REST API integrations, and WooCommerce extensions. Built with WordPress coding standards, proper hooks architecture, and battle-tested security.',
+    featured: true,
   },
   {
     icon: Wrench,
     title: 'Custom Software & Tools',
     description:
       'Automation scripts, CLI tools, APIs, browser extensions — any software solution tailored to your workflow. Properly engineered, not just AI-generated.',
+    featured: false,
+  },
+  {
+    icon: Monitor,
+    title: 'Web Applications',
+    description:
+      'Full-stack web apps built with React, Vue, Node.js, and modern frameworks. From SaaS platforms to dashboards — scalable, tested, and deployed.',
+    featured: false,
+  },
+  {
+    icon: Smartphone,
+    title: 'Mobile Applications',
+    description:
+      'Cross-platform mobile apps with React Native or Flutter. Native feel, smooth performance, and real device testing before every release.',
+    featured: false,
   },
 ]
 
@@ -60,7 +64,11 @@ export default function Services() {
         {services.map((service) => (
           <div
             key={service.title}
-            className="flex flex-col gap-3 lg:gap-4 p-6 lg:p-7 rounded-xl lg:rounded-2xl bg-portfolio-surface border border-portfolio-border shadow-[0_8px_32px_rgba(255,132,0,0.09)]"
+            className={`flex flex-col gap-3 lg:gap-4 p-6 lg:p-7 rounded-xl lg:rounded-2xl bg-portfolio-surface border shadow-[0_8px_32px_rgba(255,132,0,0.09)] ${
+              service.featured
+                ? 'border-portfolio-accent/40 border-l-[3px] border-l-portfolio-accent'
+                : 'border-portfolio-border'
+            }`}
           >
             <service.icon size={28} className="text-portfolio-accent lg:w-8 lg:h-8" />
             <h3 className="font-mono text-base lg:text-lg font-semibold text-portfolio-text">
